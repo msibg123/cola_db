@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ColaApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= form_tag "search" do %> 
+	<%= label_tag :請選擇你想要考慮的因素 %><br> 
+	<div><%= select_tag :name, options_for_select(["<15,man","15~25,man" ,"25~35,man" ,"35~45,man" ,"45~55,man" ,"55~65,man" ,"<65,man" ,"<15,woamn" ,"15~25,woman" ,"25~35,woman" ,"35~45,woman" ,"45~55,woman" ,"55~65,woman" ,"<65,woman"]) %> 
+	<%= submit_tag "提交"%> </div>
+
+	<%= link_to "<15,man", table_path %>
+
+<% end -%>
+
+<%= yield %>
+
+</body>
+</html>
