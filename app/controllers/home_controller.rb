@@ -1,14 +1,13 @@
 class HomeController < ApplicationController
 
    def index
-    @option=params[:name]
    end
 
 	   def table
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count2.each_with_index do|d,idx|
+    	 Group.data_count2.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -17,7 +16,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count3.each_with_index do|d,idx|
+    	 Group.data_count3.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -26,7 +25,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count4.each_with_index do|d,idx|
+    	 Group.data_count4.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -35,7 +34,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count5.each_with_index do|d,idx|
+    	 Group.data_count5.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -44,7 +43,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count6.each_with_index do|d,idx|
+    	 Group.data_count6.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -53,7 +52,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count7.each_with_index do|d,idx|
+    	 Group.data_count7.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -62,7 +61,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count8.each_with_index do|d,idx|
+    	 Group.data_count8.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -71,7 +70,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count9.each_with_index do|d,idx|
+    	 Group.data_count9.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -79,7 +78,7 @@ class HomeController < ApplicationController
       def table9
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count10.each_with_index do|d,idx|
+    	 Group.data_count10.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -88,7 +87,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count11.each_with_index do|d,idx|
+    	 Group.data_count11.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -97,7 +96,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count12.each_with_index do|d,idx|
+    	 Group.data_count12.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -106,7 +105,7 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count13.each_with_index do|d,idx|
+    	 Group.data_count13.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
@@ -115,8 +114,18 @@ class HomeController < ApplicationController
 
     	 colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
    		 @data=[]
-    	 Activity.data_count14.each_with_index do|d,idx|
+    	 Group.data_count14.each_with_index do|d,idx|
       @data<<[d[:name],d[:count]]
       end
      end
-   end
+
+           def table14
+
+       colors=['#F7464A','#46BFBD','#FDB45C','#FDB42C','#FDB41C','#FDB35C']
+       @data=[]
+       Group.data_count15.each_with_index do|d,idx|
+      @data<<[d[:name],d[:count]]
+      end
+     end
+
+end

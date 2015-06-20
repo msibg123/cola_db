@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -17,6 +19,7 @@ Rails.application.routes.draw do
   get 'table11' => 'home#table11'
   get 'table12' => 'home#table12'
   get 'table13' => 'home#table13'
+  get 'table14' => 'home#table14'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
